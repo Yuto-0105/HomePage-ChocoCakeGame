@@ -1,36 +1,21 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>チョコケーキ作戦：案内所</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; background-color: #fdf5e6; color: #5d4037; padding: 20px; }
-        .card { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 450px; margin: 0 auto; border: 2px solid #d7ccc8; }
-        h1 { font-size: 1.5em; }
-        .section-title { font-weight: bold; margin-top: 20px; border-bottom: 2px solid #d7ccc8; display: inline-block; }
-        .btn { display: block; padding: 12px; margin: 10px 0; background: #5d4037; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; }
-        .btn-green { background: #4caf50; } /* ホームページ用は色を変えてわかりやすく */
-        .btn-sub { background: #8d6e63; font-size: 0.9em; }
-    </style>
+    <title>チョコケーキ大作戦へ移動中...</title>
+    <script>
+        // ここに最新のCloudflare URLを書き込むだけ！
+        const latestUrl = "https://canal-clearly-frozen-rico.trycloudflare.com/";
+
+        // URLパラメータ（?a=1など）を引き継いで転送する設定
+        const params = window.location.search;
+        window.location.href = latestUrl + params;
+    </script>
 </head>
 <body>
-
-    <div class="card">
-        <h1>🍫 チョコケーキ作戦：案内板</h1>
-
-        <p class="section-title">🎮 ゲーム会場</p>
-        <a href="https://canal-clearly-frozen-rico.trycloudflare.com/?a=1" class="btn">じいじ会場</a>
-        <a href="https://canal-clearly-frozen-rico.trycloudflare.com/?a=2" class="btn">ばあば会場</a>
-
-        <p class="section-title">🏠 ホームページ</p>
-        <a href="https://canal-clearly-frozen-rico.trycloudflare.com/site/index.html" class="btn btn-green">メインホームページ</a>
-        <a href="https://canal-clearly-frozen-rico.trycloudflare.com/site/tukushinoko.html" class="btn btn-green">つくしのこ</a>
-
-        <p class="section-title">📝 お勉強資料</p>
-        <a href="https://canal-clearly-frozen-rico.trycloudflare.com/site/Downloads/Yuto_KeisanDoriru.zip" class="btn btn-sub">計算ドリル</a>
-        <a href="https://canal-clearly-frozen-rico.trycloudflare.com/site/Downloads/Bairiku_edojidainohusyu.zip" class="btn btn-sub">江戸時代の復習</a>
-    </div>
-
+    <p>ゲーム画面へ移動しています。自動で変わらない場合は <a id="link">こちら</a> をクリックしてください。</p>
+    <script>
+        document.getElementById('link').href = latestUrl + window.location.search;
+    </script>
 </body>
 </html>
